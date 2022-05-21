@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.work {
+  width: 70%;
+  height: 100%;
+  /* background-color: #fff; */
+  margin: 0 auto;
+  margin-bottom: 20%;
+}
+
+.work .workTitle {
+  margin-bottom: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.work .workTitle p {
+  font-size: 27px;
+  font-weight: 600;
+  color: #ccd6f6;
+}
+
+.work .workTitle p span {
+  font-size: 22px;
+  font-weight: 500;
+  color: #62fad6;
+}
+
+.work .workTitle .workLine {
+  width: 45%;
+  border-top: 1px solid #233554;
+}
+
+/* work box */
+
+.work .workBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work .workBox .workTabs {
+  width: 16%;
+}
+
+.work .workBox .workTabs ul li button {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  background-color: #0a192f;
+  border: none;
+  color: #6b7692;
+  border-left: 2px solid #233554;
+}
+
+.work .workBox .workTabs ul li button:hover {
+  background-color: #444f69;
+  transition: 0.5s;
+  border-left: 2px solid #62fad6;
+  color: #62fad6;
+}
+
+.work .workBox .workTabs ul li .tabBtn {
+  background-color: #444f69;
+  transition: 0.5s;
+  border-left: 2px solid #62fad6;
+  color: #62fad6;
+}
+
+/* work content */
+
+.work .workBox .workContent {
+  width: 80%;
+  height: 100%;
+}

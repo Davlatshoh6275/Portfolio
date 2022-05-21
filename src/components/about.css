@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.about {
+  margin-bottom: 20%;
+}
+
+.about .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin-bottom: 4%;
+}
+
+.about .title p {
+  font-size: 27px;
+  font-weight: 600;
+  color: #ccd6f6;
+}
+
+.about .title p span {
+  font-size: 22px;
+  font-weight: 500;
+  color: #62fad6;
+}
+
+.about .title .line {
+  width: 55%;
+  border-top: 1px solid #233554;
+}
+
+.about .contentAbout {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* text */
+
+.about .contentAbout .text {
+  width: 63%;
+}
+
+.about .contentAbout .text p {
+  font-size: 15px;
+  width: 95%;
+  font-weight: 600;
+  color: #8892b0;
+  margin-bottom: 4%;
+}
+
+.about .contentAbout .text .technologies {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .contentAbout .text .technologies ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8590ad;
+}
+
+.about .contentAbout .text .technologies ul li i {
+  font-size: 8px;
+  position: relative;
+  top: -3px;
+  color: #52d1b7;
+}
+
+/* img */
+
+.about .contentAbout .img img {
+  width: 80%;
+  height: 90%;
+  object-fit: cover;
+  object-position: 40% 26%;
+  border-radius: 7px;
+  position: relative;
+}
+
+.about .contentAbout .img:hover .backimg {
+  cursor: pointer;
+  transform: translate(-10px, -10px);
+  transition: 0.5s;
+}
+
+.about .contentAbout .img .backimg {
+  width: 80%;
+  height: 90%;
+  border: 2px solid #fff;
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  border-radius: 7px;
+  z-index: -1;
+}
+
+.about .contentAbout .img {
+  width: 35%;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about .contentAbout .img .blue {
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  background-color: #60e6cb34;
+  z-index: 10;
+  border-radius: 7px;
+}
+
+.about .contentAbout .img:hover .blue {
+  position: absolute;
+  top: 100%;
+}

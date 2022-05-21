@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.navBox {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBox .logo {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  width: 40px;
+  height: 46px;
+  background-color: #64ffda;
+  position: relative;
+}
+
+.navBox .logo .logoTwo {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  width: 36px;
+  height: 41px;
+  background-color: #0a192f;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: #60f4d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+
+.navBox .links {
+  width: 45%;
+}
+
+.navBox .links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBox .links ul li {
+  color: #60f4d2;
+  font-size: 14px;
+}
+
+.navBox .links ul li a {
+  color: #bac5e4;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navBox .links ul .btn a {
+  border: 1px solid #5ff1d0;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #5ff1d0;
+}
+
+.navBox .logo .logoTwo h3 {
+  font-size: 24px;
+}
