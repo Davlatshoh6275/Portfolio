@@ -8,11 +8,16 @@
 }
 
 .navBox {
-  width: 100%;
+  width: 90%;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
 }
 
 .navBox .logo {
@@ -38,6 +43,8 @@
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
 }
+
+/* 1 */
 
 .navBox .links {
   width: 45%;
@@ -67,6 +74,102 @@
   color: #5ff1d0;
 }
 
-.navBox .logo .logoTwo h3 {
+/* 2 */
+
+.DisLinks {
+  width: 45%;
+}
+
+.DisLinks ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DisLinks ul li {
+  color: #60f4d2;
+  font-size: 14px;
+}
+
+.DisLinks ul li a {
+  color: #bac5e4;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.DisLinks ul .btn a {
+  border: 1px solid #5ff1d0;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #5ff1d0;
+}
+
+.logo .logoTwo h3 {
   font-size: 24px;
+}
+
+.DisLinks {
+  display: none;
+  position: absolute;
+  top: -100%;
+}
+
+.logoMenu {
+  width: 35px;
+  height: 35px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoMenu i {
+  font-size: 36px;
+  color: #fff;
+}
+
+.disNone {
+  position: absolute;
+  top: -100%;
+}
+
+@media (max-width: 375px) {
+  .navBox .links {
+    width: 100%;
+    display: none;
+    padding: 0;
+  }
+
+  .navBox {
+    width: 100%;
+  }
+
+  .DisLinks {
+    width: 94%;
+    display: block;
+    height: 80%;
+    backdrop-filter: blur(100px);
+    border: 1px solid transparent;
+    padding: 10%;
+    position: absolute;
+    top: 16%;
+    transition: 0.5s;
+  }
+
+  .DisLinks ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .DisLinks ul li {
+    margin-bottom: 5%;
+  }
+
+  .DisLinks ul li a {
+    font-size: 28px;
+    font-weight: 600;
+  }
 }

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.projects_title {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.projects_title h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #ccd6f6;
+  margin-bottom: 1%;
+}
+
+.projects_title p {
+  color: #64ffda;
+}
+
+/* projects_box */
+
+.projects_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 340px);
+  grid-template-rows: auto;
+  justify-content: center;
+
+  gap: 2%;
+  margin-bottom: 10%;
+}
+
+.projects_box .project_item {
+  border: 1px solid transparent;
+  margin-bottom: 2%;
+  padding: 7%;
+  background-color: #112240;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.projects_box .project_item:hover {
+  transform: translateY(-10px);
+  transition: 0.5s all;
+}
+
+.projects_box .project_item:hover .project_text h3 {
+  color: #64ffda;
+}
+
+.projects_box .project_item .icons {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+  margin-bottom: 7%;
+}
+
+.projects_box .project_item .icons .link_folder i {
+  font-size: 50px;
+  color: #4fc8b4;
+  font-weight: 400;
+}
+
+.projects_box .project_item .icons .another_links i {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.projects_box .project_item .icons .another_links i:hover {
+  color: #4fc8b4;
+  transition: 0.5s;
+}
+
+.projects_box .project_item .project_text h3 {
+  font-size: 18px;
+  color: #ccd6f6;
+  margin-bottom: 5%;
+}
+
+.projects_box .project_item .project_text p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #717d9c;
+  margin-bottom: 10%;
+}
+
+.projects_box .project_item ul {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  font-size: 14px;
+  color: #65718f;
+}
+
+.btnShow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20%;
+}
+
+.show {
+  width: 15%;
+  height: 50px;
+  border-radius: 7px;
+  background-color: #0a192f;
+  color: #5deecd;
+  border: 1px solid #5deecd;
+  cursor: pointer;
+}
+
+.show:hover {
+  background-color: #5deecc24;
+  transition: 0.5s;
+}

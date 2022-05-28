@@ -14,7 +14,14 @@ export default function Work() {
   console.log(active);
 
   return (
-    <div className="work">
+    <div
+      className="work"
+      id="Experience"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+      data-aos-easing="linear"
+      data-aos-duration="600"
+    >
       <div className="workTitle">
         <p>
           <span>02.</span> Where I’ve Worked

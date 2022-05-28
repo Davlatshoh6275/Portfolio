@@ -4,6 +4,9 @@ import Navbar from "./components/navbar/Navbar";
 import Header from "./components/content/Header";
 import About from "./components/content/About";
 import Work from "./components/content/Work";
+import Built from "./components/content/Built";
+import Projects from "./components/content/Projects";
+import Next from "./components/content/Next";
 
 export default function App() {
   return (
@@ -13,6 +16,9 @@ export default function App() {
         <Header />
         <About />
         <Work />
+        <Built />
+        <Projects />
+        <Next />
       </div>
 
       <div className="posStick">

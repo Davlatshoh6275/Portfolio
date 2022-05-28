@@ -7,6 +7,10 @@
   font-family: "Roboto Mono", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0a192f;
   height: 100%;
@@ -89,4 +93,15 @@ body {
   position: absolute;
   bottom: 0;
   left: 48%;
+}
+
+@media (max-width: 375px) {
+  .container {
+    background-color: #fff;
+    padding-top: 20%;
+  }
+
+  .container .posStick {
+    display: none;
+  }
 }

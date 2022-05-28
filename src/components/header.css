@@ -8,6 +8,7 @@
 
 .header {
   margin-bottom: 15%;
+  margin-top: 10%;
 }
 
 .header h3 {
@@ -55,4 +56,37 @@
 
 .header .btn a {
   color: #53d3b9;
+}
+
+@media (max-width: 375px) {
+  .header h3 {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .header .firstH2 {
+    font-size: 24px;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .header .secondH2 {
+    margin-bottom: 5%;
+    font-size: 24px;
+    text-align: center;
+  }
+  .header p {
+    margin-bottom: 5%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .header .btn {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20%;
+  }
 }
