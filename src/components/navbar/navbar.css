@@ -8,15 +8,15 @@
 }
 
 .navBox {
-  width: 90%;
+  width: 100%;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(10px);
   z-index: 1000;
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  top: 0; */
   overflow: hidden;
 }
 
@@ -44,10 +44,16 @@
   font-weight: 400;
 }
 
+.navBox .logoMenu i {
+  display: none;
+}
+
 /* 1 */
 
 .navBox .links {
-  width: 45%;
+  width: 55%;
+  position: relative;
+  right: -250px;
 }
 
 .navBox .links ul {
@@ -144,6 +150,15 @@
     width: 100%;
   }
 
+  .navBox .logoMenu {
+    position: relative;
+    right: 10px;
+  }
+
+  .navBox .logoMenu i {
+    display: block;
+  }
+
   .DisLinks {
     width: 94%;
     display: block;
@@ -171,5 +186,67 @@
   .DisLinks ul li a {
     font-size: 28px;
     font-weight: 600;
+  }
+}
+
+@media (max-width: 425px) {
+  .navBox .links {
+    width: 100%;
+    display: none;
+    padding: 0;
+  }
+
+  .navBox {
+    width: 100%;
+  }
+
+  .navBox .logoMenu {
+    position: relative;
+    right: 10px;
+  }
+
+  .navBox .logoMenu i {
+    display: block;
+  }
+
+  .DisLinks {
+    width: 94%;
+    display: block;
+    height: 80%;
+    backdrop-filter: blur(100px);
+    border: 1px solid transparent;
+    padding: 10%;
+    position: absolute;
+    top: 16%;
+    transition: 0.5s;
+  }
+
+  .DisLinks ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .DisLinks ul li {
+    margin-bottom: 5%;
+  }
+
+  .DisLinks ul li a {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBox {
+    width: 100%;
+  }
+
+  .navBox .links {
+    width: 75%;
+    position: relative;
+    left: 10%;
   }
 }

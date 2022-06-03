@@ -96,12 +96,29 @@ body {
 }
 
 @media (max-width: 375px) {
-  .container {
-    background-color: #fff;
-    padding-top: 20%;
-  }
-
   .container .posStick {
     display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .container .posStick .links {
+    height: 270px;
+  }
+
+  .container .posStick .links .line {
+    left: 100%;
+  }
+
+  .container .posStick .mail h2 {
+    font-size: 11px;
+  }
+
+  .container .posStick .mail {
+    height: 310px;
+  }
+
+  .container .posStick .mail .lineTwo {
+    left: 40%;
   }
 }

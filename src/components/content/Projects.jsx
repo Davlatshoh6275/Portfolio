@@ -3,7 +3,13 @@ import "../projects.css";
 
 export default function Projects() {
   return (
-    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-easing="linear"
+      data-aos-duration="600"
+      className="project"
+    >
       <div className="projects_title">
         <h1>Other Noteworthy Projects</h1>
         <p>view the archive</p>

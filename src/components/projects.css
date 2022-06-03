@@ -7,6 +7,10 @@
   font-family: "Roboto Mono", monospace;
 }
 
+.project {
+  padding-top: 20%;
+}
+
 .projects_title {
   text-align: center;
   margin-bottom: 10%;
@@ -28,10 +32,9 @@
 
 .projects_box {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 340px);
+  grid-template-columns: repeat(auto-fill, 320px);
   grid-template-rows: auto;
   justify-content: center;
-
   gap: 2%;
   margin-bottom: 10%;
 }
@@ -120,4 +123,46 @@
 .show:hover {
   background-color: #5deecc24;
   transition: 0.5s;
+}
+
+/* media */
+
+@media (max-width: 375px) {
+  .projects_title {
+    padding-top: 40%;
+  }
+
+  .projects_box {
+    margin-bottom: 80%;
+  }
+
+  .btnShow .show {
+    width: 75%;
+  }
+}
+
+@media (max-width: 425px) {
+  .projects_title {
+    padding-top: 40%;
+  }
+
+  .projects_box {
+    margin-bottom: 80%;
+  }
+
+  .btnShow .show {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects_box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px) !important;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 36%;
+  }
 }

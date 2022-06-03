@@ -3,13 +3,7 @@ import "../built.css";
 
 export default function Built() {
   return (
-    <div
-      id="Work"
-      data-aos="fade-left"
-      data-aos-anchor-placement="center-bottom"
-      data-aos-easing="linear"
-      data-aos-duration="400"
-    >
+    <div id="Work" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <div className="built_title">
         <p>
           <span>03.</span> Some Things I’ve Built

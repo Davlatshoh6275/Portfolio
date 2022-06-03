@@ -58,3 +58,49 @@ footer {
 footer p {
   color: #ccd6f6;
 }
+
+/* media */
+
+@media (max-width: 375px) {
+  .next_title {
+    width: 100%;
+  }
+
+  .next_title h1 {
+    font-size: 30px;
+  }
+  .next_title p {
+    width: 85%;
+    margin-bottom: 15%;
+  }
+
+  .next_title .btnNext button {
+    width: 75%;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .next_title {
+    width: 100%;
+  }
+
+  .next_title h1 {
+    font-size: 30px;
+  }
+  .next_title p {
+    width: 85%;
+    margin-bottom: 15%;
+  }
+
+  .next_title .btnNext button {
+    width: 75%;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}

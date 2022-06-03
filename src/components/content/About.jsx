@@ -5,10 +5,10 @@ import user from "../../images/photo_2022-05-21_17-21-27.jpg";
 export default function About() {
   return (
     <div
-      // data-aos="fade-up"
-      // data-aos-anchor-placement="center-bottom"
-      // data-aos-easing="linear"
-      // data-aos-duration="600"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-easing="linear"
+      data-aos-duration="600"
       id="about"
     >
       <div className="about">

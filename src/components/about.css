@@ -9,6 +9,7 @@
 
 .about {
   margin-bottom: 20%;
+  /* padding-top: 20%; */
 }
 
 .about .title {
@@ -123,4 +124,129 @@
 .about .contentAbout .img:hover .blue {
   position: absolute;
   top: 100%;
+}
+
+@media (max-width: 375px) {
+  .about .title {
+    width: 100%;
+  }
+
+  .about .title p {
+    font-size: 20px;
+  }
+
+  .about .title p span {
+    font-size: 16px;
+  }
+
+  .about .title .line {
+    width: 35%;
+  }
+
+  .about .contentAbout {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .contentAbout .text {
+    width: 100%;
+  }
+  .about .contentAbout .text p {
+    font-size: 14px;
+  }
+
+  .about .contentAbout .text .technologies {
+    width: 100%;
+    margin: 10% 0;
+  }
+
+  .about .contentAbout .text .technologies ul {
+    justify-content: start;
+    text-align: left;
+  }
+
+  .about .contentAbout .img {
+    width: 100%;
+  }
+
+  .about .contentAbout .img .blue {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .about .title {
+    width: 100%;
+  }
+
+  .about .title p {
+    font-size: 20px;
+  }
+
+  .about .title p span {
+    font-size: 16px;
+  }
+
+  .about .title .line {
+    width: 35%;
+  }
+
+  .about .contentAbout {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .contentAbout .text {
+    width: 100%;
+  }
+  .about .contentAbout .text p {
+    font-size: 14px;
+  }
+
+  .about .contentAbout .text .technologies {
+    width: 100%;
+    margin: 10% 0;
+  }
+
+  .about .contentAbout .text .technologies ul {
+    justify-content: start;
+    text-align: left;
+  }
+
+  .about .contentAbout .img {
+    width: 100%;
+  }
+
+  .about .contentAbout .img .blue {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .title {
+    width: 100%;
+  }
+
+  .about .contentAbout .text p {
+    font-size: 12px;
+  }
+
+  .about .contentAbout .img {
+    height: 470px;
+    width: 40%;
+    left: 10%;
+  }
+
+  .about .contentAbout .img .backimg {
+    width: 85%;
+    height: 88%;
+    top: 7%;
+  }
+
+  .about .contentAbout .text .technologies {
+    margin-top: 10%;
+    width: 80%;
+  }
 }
